@@ -9,10 +9,13 @@
     <!-- form : 웹 서버에 정보를 제출하기 위한 용도 -->
     <form action="" method="" name="" novalidate autocomplete="">
       <!-- action : 전송한 정보를 처리할 웹페이지의 url 
-             method : 서버로 전송할 http 방식 (get(기본값), post
-             name : 폼의 이름 지정
-             novalidate : 데이터 유효성을 검사하지 않음
-             autocomplete : 자동완성 (on(기본), off) -->
+           method : 서버로 전송할 http 방식 (get(기본값), post
+           name : 폼의 이름 지정
+           novalidate : 데이터 유효성을 검사하지 않음
+           autocomplete : 자동완성 (on(기본), off) -->
+      <div>
+        <input type="text" />
+      </div>
       <div>
         <label for="username"> 이름 </label>
         <input type="text" id="username" / >
@@ -30,7 +33,7 @@
       <div>
         <!-- checkbox : 여러개의 선택지를 주고 여러개를 선택하기 -->
         <label for="">취미</label>
-        <input type="checkbox" name="hobby" id="" /> 영화감상
+        <input type="checkbox" name="hobby" id="" checked /> 영화감상
         <input type="checkbox" name="hobby" id="" /> 독서
         <input type="checkbox" name="hobby" id="" /> 운동
         <input type="checkbox" name="hobby" id="" /> 악기연주
@@ -38,7 +41,22 @@
         <input type="checkbox" name="hobby" id="" /> 춤추기
         <input type="checkbox" name="hobby" id="" /> 그림그리기
       </div>
-      <input type="button" value="보내기" />
+      <div>
+        <textarea name="" id="" cols="30" rows="10">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nihil iusto sequi, tempora ea, nisi repudiandae laboriosam porro alias reprehenderit repellendus fugiat non perferendis deserunt! Quae amet repellendus odio placeat.
+        </textarea>
+      </div>
+      <div>
+        <select name="차종" id="">
+          <option value="bmw">BMW</option>
+          <option value="Benz" selected>Benz</option>
+          <option value="Audi">Audi</option>
+          <option value="KIA">KIA</option>
+        </select>
+      </div>
+      <input type="button" value="일반버튼" />
+      <input type="submit" value="보내기" />
+      <input type="reset" value="리셋" />
     </form>
   </body>
 </html>

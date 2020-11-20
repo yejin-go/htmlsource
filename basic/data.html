@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- data-* : 사용자 정의 데이터 속성 지정 
+                : 스크립트에서 이용할 수 있는 데이터(정보)를 저장 -->
+    <div id="me" data-my-name="admin" data-my-age="851">Admin</div>
+    <script>
+      //자바스크립트
+      const me = document.getElementById("me");
+      console.log(me.dataset.myName);
+      console.log(me.dataset.myAge);
+    </script>
+  </body>
+</html>
